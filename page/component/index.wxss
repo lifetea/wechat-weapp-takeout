@@ -1,0 +1,116 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.textStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  margin-top: 200px;
+}
+.flex-wrp{
+  height: 400px;
+  display:flex;
+  background-color: #FFFFFF;
+}
+.flex-item{
+  width: 100px;
+  height: 100px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-item{
+  text-align: center
+}
+.m-item-icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  border-radius: 50%
+}
+.image{
+  width: 100%;
+  height: 100%
+}
+.m-item-title{
+  font-size: 24rpx;
+  color: black
+}
+.dish-item{
+  width: 100%
+}
+.dish-item-pic{
+  padding: 10rpx
+}
+.dish-item-pic image{
+   width: 140rpx;
+   height: 140rpx;
+   margin: 0 auto
+}
+/*菜品信息*/
+.dish-item-info{
+  width: 150rpx;
+  padding-left: 10rpx
+}
+.dish-item-name{
+  color: #454545;
+  font-size: 28rpx;
+  line-height: 50rpx
+}
+.dish-item-sales{
+  color: #ccc;
+  font-size:22rpx;
+  line-height: 70rpx
+}
+.dish-item-money{
+  color: #f50909;
+  font-size: 26rpx;
+}
+/*操作菜品数量*/
+.dish-item-count{
+  width: 220rpx;
+  display: flex;
+  padding: 100rpx 30rpx 0;
+}
+.dish-item-count-minus{
+  width: 50rpx;
+  height: 50rpx;
+}
+.dish-item-count-text{
+  color: #ccc;
+  padding: 0 15rpx;
+  line-height: 50rpx
+
+}
+.dish-item-count-plus{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.left-side{
+  height: 400px
+}
+.flex-auto{
+  width: 100%;
+  height: 400px;
+  color: #FFFFFF;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+}
+.swiper-item{
+  display: block;
+  height: 150px;
+}
