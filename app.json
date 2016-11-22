@@ -90,7 +90,7 @@
           "text": "订单"
         },
         {
-          "pagePath": "page/API/login/login",
+          "pagePath":"page/component/component-pages/scroll-view/scroll-view",
           "iconPath": "image/myNormal.png",
           "selectedIconPath": "image/mySelect.png",
           "text": "我的"

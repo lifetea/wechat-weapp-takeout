@@ -1,4 +1,4 @@
-<view class="page">
+<view bindscroll="scroll" class="page">
   <view class="page__hd">
     <text class="page__title">scroll-view</text>
     <text class="page__desc">可滚动视图区域</text>

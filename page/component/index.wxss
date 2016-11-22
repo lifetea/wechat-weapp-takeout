@@ -1,45 +1,7 @@
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-}
-
-.textStyle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.textContainer {
-  margin-top: 200px;
-}
-.flex-wrp{
-  height: 400px;
-  display:flex;
-  background-color: #FFFFFF;
-}
-.flex-item{
-  width: 100px;
-  height: 100px;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .m-item{
   text-align: center
 }
-.m-item-icon{
-  width: 100rpx;
-  height: 100rpx;
-  margin: 0 auto;
-  border-radius: 50%
-}
+
 .image{
   width: 100%;
   height: 100%
@@ -59,6 +21,48 @@
    height: 140rpx;
    margin: 0 auto
 }
+/*banner导航*/
+swiper{
+  height: 300rpx
+}
+.swiper-item{
+  display: block;
+  height: 300rpx;
+}
+/*菜单wrap*/
+.menu-wrp{
+  overflow:hidden;
+  width:750rpx;
+  height: 800rpx;
+  display:flex;
+  background-color: #FFFFFF;
+  flex-direction:row;
+}
+
+/*左侧菜单*/
+.menu-item{
+  width: 200rpx;
+  height: 200rpx;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-item-icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  border-radius: 50%
+}
+.left-side{
+  height: 800rpx;
+  display:flex;
+  width: 200rpx;
+  background-color: #FFFFFF;
+  flex-direction:column;
+}
+/*右侧菜品*/
+
 /*菜品信息*/
 .dish-item-info{
   width: 150rpx;
@@ -99,18 +103,15 @@
   height: 50rpx;
 }
 
-.left-side{
-  height: 400px
-}
+
+
+
 .flex-auto{
   width: 100%;
-  height: 400px;
+  height: 800rpx;
   color: #FFFFFF;
   /*display: flex;*/
   justify-content: center;
   align-items: center;
 }
-.swiper-item{
-  display: block;
-  height: 150px;
-}
+

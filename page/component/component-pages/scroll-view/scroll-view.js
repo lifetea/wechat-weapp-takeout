@@ -1,16 +1,18 @@
 var order = ['green', 'red', 'yellow', 'blue', 'green']
 Page({
   data: {
-    toView: 'green'
+    toView: 'blue'
   },
   upper: function(e) {
     console.log(e)
   },
   lower: function(e) {
     console.log(e)
+    
   },
   scroll: function(e) {
     console.log(e)
+    console.log('haha')
   },
   scrollToTop: function(e) {
     this.setAction({

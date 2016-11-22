@@ -1,3 +1,4 @@
+import menus from './resources/json/menus.js'
 Page({
   data:{
     text:"Page main",
@@ -19,7 +20,16 @@ Page({
     vertical: false,
     autoplay: false,
     interval: 3000,
-    duration: 1200
+    duration: 1200,
+    toView: 'blue',
+    'menus':menus
+  },
+  selectMenu:function(event){
+    let item = event.currentTarget.dataset
+    this.setData({
+      toView: item.tag
+    })
+    // this.data.toView = 'red'
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -36,8 +46,7 @@ Page({
   onUnload:function(){
     // 页面关闭
   },
-  repvent:function(e){
+  onScroll:function(e){
     console.log(e)
-    e.preventDefault()
   }
 })

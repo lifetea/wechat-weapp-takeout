@@ -8,6 +8,7 @@
 page {
   background-color: #fbf9fe;
   height: 100%;
+  overflow:hidden
 }
 .container {
   display: flex;
