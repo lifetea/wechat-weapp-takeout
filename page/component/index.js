@@ -22,14 +22,59 @@ Page({
     interval: 3000,
     duration: 1200,
     toView: 'blue',
-    'menus':menus
+    'menus':menus,
+    selectedMenuId:1,
+    total:{
+      count:0,
+      money:0
+    }
   },
   selectMenu:function(event){
-    let item = event.currentTarget.dataset
+    let data = event.currentTarget.dataset
     this.setData({
-      toView: item.tag
+      toView: data.tag,
+      selectedMenuId: data.id
     })
     // this.data.toView = 'red'
+  },
+  addCount:function(event){
+    let data = event.currentTarget.dataset
+    let total = this.data.total
+    let menus = this.data.menus
+    let menu = menus.find(function(v){
+      return v.id == data.cid
+    })
+    let dish = menu.dishs.find(function(v){
+      return v.id == data.id
+    })
+    dish.count += 1;
+    total.count += 1
+    total.money += dish.price
+    this.setData({
+      'menus':menus,
+      'total':total
+    })
+    console.log(this.data.menus)
+  },
+  minusCount:function(event){
+    let data  = event.currentTarget.dataset
+    let total = this.data.total 
+    let menus = this.data.menus
+    let menu = menus.find(function(v){
+      return v.id == data.cid
+    })
+    let dish = menu.dishs.find(function(v){
+      return v.id == data.id
+    })
+    if(dish.count <= 0)
+      return 
+    dish.count -= 1;
+    total.count -= 1
+    total.money -= dish.price
+    this.setData({
+      'menus':menus,
+      'total':total
+    })
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
