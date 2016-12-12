@@ -1,6 +1,6 @@
 <view class="index">
     <view class="nav-tab-wrp">
-      <navigator url="javascript:(0)" class="nav-tab-item" hover-class="navigator-hover">点餐</navigator>
+      <navigator url="javascript:(0)" class="nav-tab-item active" hover-class="navigator-hover">点餐</navigator>
       <navigator url="navigate?title=navigate" class="nav-tab-item" hover-class="navigator-hover">评价</navigator>
       <navigator url="navigate?title=navigate" class="nav-tab-item" hover-class="navigator-hover">商家</navigator>
     </view>
@@ -13,7 +13,7 @@
         <text class="cart-item-total-price">￥{{total.money}}</text>
       </view>
       <view class="cart-tab-item">
-        <navigator url="navigate?title=navigate" class="cart-tab-item-btn" hover-class="navigator-hover">选好了</navigator>
+        <navigator url="../Order/cert/cert?title=确认" class="cart-tab-item-btn" hover-class="navigator-hover">选好了</navigator>
       </view>
     </view>
     <view class="menu-wrp">

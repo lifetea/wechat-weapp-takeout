@@ -63,7 +63,8 @@
     "page/API/get-location/get-location",
     "page/API/open-location/open-location",
 
-    "page/API/storage/storage"
+    "page/API/storage/storage",
+    "page/Order/cert/cert"
   ],
   "window": {
     "navigationBarTextStyle": "black",
